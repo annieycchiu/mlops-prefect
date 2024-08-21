@@ -15,7 +15,7 @@ def get_repo_info(repo_name: str = "PrefectHQ/prefect"):
 
 if __name__ == "__main__":
     flow.from_source(
-        source="https://github.com/annieycchiu/mlops-prefect",
+        source="https://github.com/annieycchiu/mlops-prefect.git",
         entrypoint="second_prefect_flow.py:get_repo_info",
     ).deploy(
         name="my-prefect-deployment-to-pool", 
